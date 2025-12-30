@@ -18,7 +18,7 @@ namespace MiniBank.Domain.Entities
 
         public virtual Customer? Customer { get; set; }
 
-        public virtual ICollection<AccountTransaction> Transactions { get; set; } = new List<AccountTransacction>();
+        public virtual ICollection<AccountTransaction> Transactions { get; set; } = new List<AccountTransaction>();
 
         public void Deposit(decimal amount)
         {
